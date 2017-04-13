@@ -30,9 +30,9 @@ $(function() {
   function addParticipantsMessage (data) {
     var message = '';
     if (data.numUsers === 1) {
-      message += "Atualmente temos 1 participante";
+      message += "1 participante online";
     } else {
-      message += "Atualmente temos " + data.numUsers + " participantes";
+      message += data.numUsers + " participantes online";
     }
     log(message);
   }
@@ -88,12 +88,12 @@ $(function() {
 
     var time = new Date();
     var $usernameDiv = $('<span class="username"/>')
-      .text(data.username)
+      .text(data.username + ':')
       .css('color', getUsernameColor(data.username));
     var $messageBodyDiv = $('<span class="messageBody">')
-      .text(/*time.getHours() +':' + time.getMinutes() + ' | ' + */data.message);
+      .text(data.message);
     var $time = $('<span class="time">')
-    .text(' ' + time.getHours() +':' + time.getMinutes());
+    .text(' ' + time.getHours() + ':' + time.getMinutes());
 
     var typingClass = data.typing ? 'typing' : '';
     var $messageDiv = $('<li class="message"/>')
@@ -234,7 +234,7 @@ $(function() {
   socket.on('login', function (data) {
     connected = true;
     // Display the welcome message
-    var message = username + ", seja bem-vindo ao chat do Gabriel";
+    var message = username + ", seja bem-vindo ao chat!";
     log(message, {
       prepend: true
     });
