@@ -88,18 +88,18 @@ $(function() {
 
     var time = new Date();
     var $usernameDiv = $('<span class="username"/>')
-      .text(data.username + ':')
+      .text(data.username)
       .css('color', getUsernameColor(data.username));
-    var $messageBodyDiv = $('<span class="messageBody">')
+    var $messageBodyDiv = $('<br><span class="messageBody">')
       .text(data.message);
     var $time = $('<span class="time">')
-    .text(' ' + time.getHours() + ':' + time.getMinutes());
+    .text(time.getHours() + ':' + time.getMinutes());
 
     var typingClass = data.typing ? 'typing' : '';
     var $messageDiv = $('<li class="message"/>')
       .data('username', data.username)
       .addClass(typingClass)
-      .append($usernameDiv, $messageBodyDiv, $time);
+      .append($usernameDiv, $time, $messageBodyDiv);
 
     addMessageElement($messageDiv, options);
   }

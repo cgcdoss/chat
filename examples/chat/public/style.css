@@ -87,7 +87,7 @@ ul {
 }
 
 .subtitle{
-  font-size: 80%;
+  font-size: 90%;
   color: red;
   font-weight: 100;
 }
@@ -118,12 +118,12 @@ a:hover{
 }
 
 .messageBody{
-  font-size: 100%;
+  font-size: 85%;
 }
 
 
 .username{
-    font-size: 100%;
+    font-size: 90%;
 }
 
 .inputMessage {
@@ -156,8 +156,8 @@ a:hover{
 }
 
 .time{
-  color: gray;
-  font-size: 50%;
+  color:  #9e9ea6;
+  font-size: 45%;
 }
 
 .username {
@@ -181,4 +181,6 @@ a:hover{
   width: 100%;
 }
 
-/*.messages li:nth-child(odd) { background: #eee; }*/
+.message:hover {
+  background: #eee;
+}
