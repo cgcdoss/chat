@@ -49,7 +49,7 @@ ul {
 /* Login Page */
 
 .login.page {
-  background-color: black;
+  background-color: #2d5f8b;
 }
 
 .login.page .form {
@@ -65,7 +65,7 @@ ul {
 .login.page .form .usernameInput {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #f68626;
   outline: none;
   padding-bottom: 15px;
   text-align: center;
@@ -82,13 +82,13 @@ ul {
 }
 
 .login.page .title, .login.page .usernameInput {
-  color: red;
+  color: #f68626;
   font-weight: 100;
 }
 
 .subtitle{
   font-size: 90%;
-  color: red;
+  color: #f68626;
   font-weight: 100;
 }
 
@@ -170,7 +170,7 @@ a:hover{
 /* Input */
 
 .inputMessage {
-  border: 10px solid #000;
+  border: 10px solid #2d5f8b;
   bottom: 0;
   height: 60px;
   left: 0;
@@ -181,14 +181,9 @@ a:hover{
   width: 100%;
 }
 
-.message:hover {
-  background: #eee;
-}
-
-.log:hover {
-  background: #eee;
+.message:hover, .log:hover {
+  background: #ffa555;
 }
 
 .login.page .form .usernameInput:hover {
-    background: darkgray;
-}
+    background: lightskyblue;
