@@ -72,7 +72,8 @@ $(function() {
 
   // Log a message
   function log (message, options) {
-    var $el = $('<li>').addClass('log').text(message);
+    var time = new Date();
+    var $el = $('<li>').addClass('log').text(message + ' - ' + time.getHours() + ':' + time.getMinutes());
     addMessageElement($el, options);
   }
 

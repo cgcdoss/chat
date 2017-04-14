@@ -92,7 +92,7 @@ ul {
   font-weight: 100;
 }
 
-a{
+a, .login.page .form .usernameInput{
 -webkit-transition: all 500ms ease;
 -moz-transition: all 500ms ease;
 -ms-transition: all 500ms ease;
@@ -183,4 +183,12 @@ a:hover{
 
 .message:hover {
   background: #eee;
+}
+
+.log:hover {
+  background: #eee;
+}
+
+.login.page .form .usernameInput:hover {
+    background: darkgray;
 }
