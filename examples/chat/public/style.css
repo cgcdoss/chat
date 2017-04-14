@@ -190,5 +190,4 @@ a:hover{
 }
 
 .login.page .form .usernameInput:hover {
-    background: darkgray;
-}
+    background: #333;
