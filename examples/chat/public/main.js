@@ -24,6 +24,7 @@ $(function() {
   var typing = false;
   var lastTypingTime;
   var $currentInput = $usernameInput.focus();
+  //teste
 
   var socket = io();
 
